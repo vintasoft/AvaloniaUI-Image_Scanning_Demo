@@ -1,0 +1,12 @@
+﻿<Window x:Class="AvaloniaImageScanningDemo.MessageWindow"
+        xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:AvaloniaSimpleBarcodeReaderDemo"
+        Title="Information" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterOwner" CanResize="False">
+  <StackPanel Orientation="Vertical" Margin="5">
+    <Label>
+      <AccessText x:Name="text" TextWrapping="Wrap" />
+    </Label>
+    <Button Name="buttonOk" Width="82" Margin="0,5,0,5" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Click="buttonOk_Click" Grid.Row="6">OK</Button>
+  </StackPanel>
+</Window>

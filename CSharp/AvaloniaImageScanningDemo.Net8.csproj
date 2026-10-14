@@ -1,0 +1,63 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <AssemblyName>AvaloniaImageScanningDemo</AssemblyName>
+
+    <EnableDefaultItems>false</EnableDefaultItems>
+
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyFileVersionAttribute>false</GenerateAssemblyFileVersionAttribute>
+    <GenerateAssemblyVersionAttribute>false</GenerateAssemblyVersionAttribute>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
+
+    <Version>15.5.1.1</Version>
+    <ApplicationIcon>App.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="12.1.3" />
+    <PackageReference Include="Avalonia.Desktop" Version="12.1.3" />
+    <PackageReference Include="Avalonia.Themes.Fluent" Version="12.1.3" />
+    <PackageReference Include="Avalonia.Fonts.Inter" Version="12.1.3" />
+    <PackageReference Include="AvaloniaUI.DiagnosticsSupport" Version="2.2.3">
+      <IncludeAssets Condition="'$(Configuration)' != 'Debug'">None</IncludeAssets>
+      <PrivateAssets Condition="'$(Configuration)' != 'Debug'">All</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Vintasoft.Shared" Version="4.7.0.1" />
+    <PackageReference Include="Vintasoft.Twain" Version="15.5.0.1" />
+    <PackageReference Include="Vintasoft.WiaImageScanning" Version="15.5.0.1" />
+    <PackageReference Include="Vintasoft.Sane" Version="15.5.0.1" />
+    <PackageReference Include="Vintasoft.EsclImageScanning" Version="15.5.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <AvaloniaXaml Include="App.axaml">
+      <SubType>Designer</SubType>
+    </AvaloniaXaml>
+    <AvaloniaXaml Include="MainWindow.axaml">
+      <SubType>Designer</SubType>
+    </AvaloniaXaml>
+    <AvaloniaXaml Include="MessageWindow.axaml">
+      <SubType>Designer</SubType>
+    </AvaloniaXaml>
+    <Compile Include="App.axaml.cs" />
+    <Compile Include="MainWindow.axaml.cs" />
+    <Compile Include="MessageWindow.axaml.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UniversalImageScanner\ImagePixelType.cs" />
+    <Compile Include="UniversalImageScanner\IUniversalImageScanner.cs" />
+    <Compile Include="UniversalImageScanner\UniversalEsclImageScanner.cs" />
+    <Compile Include="UniversalImageScanner\UniversalImageScannerManager.cs" />
+    <Compile Include="UniversalImageScanner\UniversalSaneImageScanner.cs" />
+    <Compile Include="UniversalImageScanner\UniversalTwainImageScanner.cs" />
+    <Compile Include="UniversalImageScanner\UniversalWiaImageScanner.cs" />
+    <Content Include="App.ico" />
+  </ItemGroup>
+  
+</Project>
