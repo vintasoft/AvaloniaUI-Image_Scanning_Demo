@@ -20,6 +20,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Vintasoft.Shared" Version="4.7.0.1" />
+    <PackageReference Include="Vintasoft.Twain" Version="15.5.0.1" />
+    <PackageReference Include="Vintasoft.WiaImageScanning" Version="15.5.0.1" />
+    <PackageReference Include="Vintasoft.EsclImageScanning" Version="15.5.0.1" />
+    <PackageReference Include="Vintasoft.Sane" Version="15.5.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Avalonia" Version="12.1.3" />
     <PackageReference Include="Avalonia.Desktop" Version="12.1.3" />
     <PackageReference Include="Avalonia.Themes.Fluent" Version="12.1.3" />
@@ -28,11 +36,6 @@
       <IncludeAssets Condition="'$(Configuration)' != 'Debug'">None</IncludeAssets>
       <PrivateAssets Condition="'$(Configuration)' != 'Debug'">All</PrivateAssets>
     </PackageReference>
-    <PackageReference Include="Vintasoft.Shared" Version="4.7.0.1" />
-    <PackageReference Include="Vintasoft.Twain" Version="15.5.0.1" />
-    <PackageReference Include="Vintasoft.WiaImageScanning" Version="15.5.0.1" />
-    <PackageReference Include="Vintasoft.Sane" Version="15.5.0.1" />
-    <PackageReference Include="Vintasoft.EsclImageScanning" Version="15.5.0.1" />
   </ItemGroup>
 
   <ItemGroup>
