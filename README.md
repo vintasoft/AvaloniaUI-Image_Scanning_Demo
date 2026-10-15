@@ -1,6 +1,6 @@
 ﻿# VintaSoft Avalonia Image Scanning Demo
 
-This Avalonia UI project uses <a href="https://www.vintasoft.com/vstwain-dotnet-index.html">VintaSoft TWAIN .NET SDK</a> and demonstrates how to acquire images from TWAIN/WIA/eSCL/SANE image scanner in Windows/Linux/macOS.
+This Avalonia UI project uses <a href="https://www.vintasoft.com/vstwain-dotnet-index.html">VintaSoft TWAIN .NET SDK</a> and demonstrates how to acquire images from TWAIN/WIA/eSCL image scanner in Windows, SANE/TWAIN/eSCL image scanner in Linux, eSCL (Apple AirScan) image scanner in macOS.
 
 
 ## Screenshot
